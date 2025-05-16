@@ -1,0 +1,17 @@
+[
+  {"field": "שם העסק","type": "string","example": "עו\"ד חיים כהן ושות'","regex": null,"profiles": ["law_firm","doctor","business"]},
+  {"field": "טלפון","type": "string","example": "+972-3-5555555","regex": "(?:\\+972[- ]?|0)[2-9]{1}-?\\d{7}","profiles": ["law_firm","doctor","business"]},
+  {"field": "דוא\"ל","type": "email","example": "office@lawfirm.co.il","regex": "[\\w\\.-]+@[\\w\\.-]+\\.[a-z]{2,}","profiles": ["law_firm","doctor","business"]},
+  {"field": "לוגו","type": "url","example": "https://site.com/logo.png","regex": null,"profiles": ["law_firm","business"]},
+  {"field": "צוות","type": "array","example": [{"שם": "עו\"ד רונית לוי", "תפקיד": "שותפה", "דוא\"ל": "ronit@lawfirm.co.il"}],"regex": null,"profiles": ["law_firm"]},
+  {"field": "כתובת","type": "string","example": "רחוב הרצל 15, תל אביב","regex": null,"profiles": ["law_firm","doctor","business"]},
+  {"field": "שעות פעילות","type": "string","example": "א'-ה' 9:00-18:00, ו' 9:00-13:00","regex": null,"profiles": ["law_firm","business"]},
+  {"field": "שעות קבלה","type": "string","example": "א'-ה' 9:00-18:00, ו' 9:00-13:00","regex": null,"profiles": ["doctor"]},
+  {"field": "שעות פתיחה","type": "string","example": "א'-ה' 9:00-18:00, ו' 9:00-13:00","regex": null,"profiles": ["business"]},
+  {"field": "תחומי עיסוק","type": "array","example": ["דיני משפחה", "דיני עבודה", "נזיקין"],"regex": null,"profiles": ["law_firm"]},
+  {"field": "תחום התמחות","type": "string","example": "רפואת משפחה","regex": null,"profiles": ["doctor"]},
+  {"field": "תחום פעילות","type": "string","example": "מסעדה איטלקית","regex": null,"profiles": ["business"]},
+  {"field": "קישורים לרשתות","type": "object","example": {"facebook": "https://facebook.com/business", "instagram": "https://instagram.com/business"},"regex": null,"profiles": ["law_firm","doctor","business"]},
+  {"field": "רופאים","type": "array","example": [{"שם": "ד\"ר יעל לוי", "התמחות": "רפואת משפחה", "דוא\"ל": "yael@clinic.co.il"}],"regex": null,"profiles": ["doctor"]},
+  {"field": "צבעים דומיננטיים","type": "array","example": ["#123456", "#789abc"],"regex": null,"profiles": ["law_firm","business"]}
+]
