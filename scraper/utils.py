@@ -11,7 +11,7 @@ def load_profiles():
         dict: Profile configurations
     """
     try:
-        with open('config/profiles.json', 'r', encoding='utf-8') as file:
+        with open('config/profiles.json', 'r', encoding='utf-8-sig') as file:
             profiles = json.load(file)
         return profiles
     except (FileNotFoundError, json.JSONDecodeError) as e:

@@ -49,7 +49,7 @@ def scrape_website(url, profile, extract_colors=True, extract_logo=True, extract
         design_elements = {}
         
         if extract_colors:
-            design_elements['colors'] = extract_colors(soup, response.text)
+            design_elements['colors'] = extract_color_palette(soup, response.text)
             
         if extract_logo:
             design_elements['logo_url'] = extract_logo(soup, url)

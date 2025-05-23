@@ -12,7 +12,7 @@ import colorsys
 # Suppress cssutils logging
 cssutils.log.setLevel(logging.CRITICAL)
 
-def extract_colors(soup, html_content, max_colors=5):
+def extract_color_palette(soup, html_content, max_colors=5):
     """
     Extract dominant colors from a website
     
